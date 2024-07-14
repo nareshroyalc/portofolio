@@ -1,59 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chikkala Lakshmi Naresh's portfolio showcasing web technologies skills and projects.">
-    <title>Chikkala Lakshmi Naresh - Portfolio</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="description" content="Portfolio website of Chikkala Lakshmi Naresh, showcasing projects, skills, and experience in React.js, Django, and full stack development.">
+    <meta name="keywords" content="Chikkala Lakshmi Naresh, Portfolio, React.js, Django, Full Stack Developer, Projects, Experience, Skills">
+    <meta name="author" content="Chikkala Lakshmi Naresh">
+    <title>Chikkala Lakshmi Naresh | Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
         }
-        .container {
-            margin-top: 50px;
+
+        .navbar {
+            background-color: #007bff; /* Blue Navbar */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
         }
-        .project {
-            margin-bottom: 30px;
+
+        .navbar-brand {
+            color: #ffffff; /* White text for brand */
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff; /* White text for links */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #cccccc; /* Light grey on hover */
+        }
+
+        .section-title {
+            margin: 40px 0 20px;
+            text-align: center;
+            color: #007bff; /* Blue section titles */
+        }
+
+        .project-card, .experience-card {
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for cards */
+            background-color: #ffffff; /* White background for cards */
+            transition: box-shadow 0.3s ease;
+        }
+
+        .project-card:hover, .experience-card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+        }
+
+        .card-title {
+            color: #007bff; /* Blue card titles */
+        }
+
+        .card-text {
+            color: #666666; /* Grey card text */
+        }
+
+        .btn {
+            background-color: #007bff; /* Blue buttons */
+            color: #ffffff; /* White text for buttons */
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        footer {
+            background-color: #343a40; /* Dark background for footer */
+            color: #ffffff; /* White text for footer */
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
+
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Lakshmi Naresh</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
-        <header class="text-center">
-            <h1>Chikkala Lakshmi Naresh</h1>
-            <p>Web Technologies Specialist</p>
-        </header>
-        <section id="about" class="text-center">
-            <h2>About Me</h2>
-            <p>I am Chikkala Lakshmi Naresh, a web technologies specialist with a passion for creating innovative web solutions. I have experience in various web technologies and have worked on several projects.</p>
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <p>Hi, I'm Chikkala Lakshmi Naresh, a Computer Science Engineering student at Rajiv Gandhi University of Knowledge Technologies, Nuzvid. I specialize in React.js and Django development, and I'm passionate about building dynamic and responsive web applications. Welcome to my portfolio!</p>
         </section>
+
         <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1: E-commerce Website</h3>
-                <p>Developed a full-featured e-commerce website using React and Django.</p>
-            </div>
-            <div class="project">
-                <h3>Project 2: Blogging Platform</h3>
-                <p>Created a responsive blogging platform with user authentication and dynamic content management.</p>
-            </div>
-            <div class="project">
-                <h3>Project 3: Portfolio Website</h3>
-                <p>Designed and developed a personal portfolio website using HTML, CSS, and Bootstrap.</p>
-            </div>
-            <div class="project">
-                <h3>Project 4: Task Management Tool</h3>
-                <p>Built a task management tool with features like task assignments, deadlines, and progress tracking.</p>
-            </div>
-            <div class="project">
-                <h3>Project 5: Social Media Dashboard</h3>
-                <p>Developed a social media dashboard for tracking and analyzing social media metrics.</p>
+            <h2 class="section-title">Projects</h2>
+            <div class="row">
+                <div class="col-md-6 project-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Todegram (Social Media Platform)</h5>
+                            <p class="card-text">A social media platform for viewing and interacting with user posts. Features include liking, commenting, and sharing functionalities designed for seamless user experience and engagement.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Smart Crop Advisor</h5>
+                            <p class="card-text">Developed a React frontend for an intuitive crop yield prediction interface, integrating a Django backend to load and utilize a machine learning model for predictions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Prompt Generator with Groq API</h5>
+                            <p class="card-text">Integrated a React frontend for a user-friendly prompt interface and a Django backend to process user prompts via the Groq API, generating text responses in real-time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Shape Detection</h5>
+                            <p class="card-text">Implemented face detection using MediaPipe framework, creating a React.js interface for displaying results and analyzing facial features to identify shapes (oval, round, square, etc.).</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <footer class="text-center">
-            <p>&copy; 2024 Chikkala Lakshmi Naresh</p>
-        </footer>
+
+        <section id="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Intern at Artflix</h5>
+                        <p class="card-text">React.js and Django Development</p>
+                        <p class="card-text"><small class="text-muted">01/09/2023 - present | Nuzvid, India</small></p>
+                        <ul>
+                            <li>Engineered dynamic web components and interactive user interfaces, enhancing page load speed by 25%.</li>
+                            <li>Boosted user engagement by 20% through responsive design and optimized JavaScript code.</li>
+                            <li>Collaborated with teams to implement backend solutions with Django.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="experience-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Full Stack Developer at Codealpha</h5>
+                        <p class="card-text"><small class="text-muted">01/05/2024 - 31/05/2024 | Online</small></p>
+                        <ul>
+                            <li>Created a social media platform for viewing and interacting with user posts.</li>
+                            <li>Developed a basic Tic-Tac-Toe game, focusing on real-time interaction and user experience.</li>
+                            <li>Built a basic e-commerce platform, implementing essential features for online shopping.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <ul>
+                <li>Programming Languages: Python</li>
+                <li>Frameworks: React, Django</li>
+                <li>Databases: MySQL, MongoDB</li>
+                <li>Tools: Git, GitHub, VSCode, PyCharm, Linux</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <p>Email: <a href="mailto:lakshminareshchikkala@gmail.com">lakshminareshchikkala@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/chikkala-lakshmi-naresh-71819a226/" target="_blank">Chikkala Lakshmi Naresh</a></p>
+            <p>GitHub: <a href="https://github.com/cnareshroyal" target="_blank">cnareshroyal</a></p>
+        </section>
     </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
